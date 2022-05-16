@@ -21,13 +21,6 @@ input {
   position: absolute;
 }
 
-label{
-  display: inline-block;   
-  width: 30px;
-  height: 30px;
-  text-align: center;
-}
-
 .slider {
   width: 50%; 
   display: flex;
@@ -42,7 +35,7 @@ label{
 .slide__text {
   text-align: center;
   line-height: 2rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .slide__image {
@@ -60,12 +53,12 @@ label{
 
 .controls {
   margin: 0 auto;
+  display: flex;
 }
 
 .slide__content {
   width: 50vw;
   height: 100%;
-  padding: 30px;
   opacity: 0;
   pointer-events: none;
   transition: opacity .6s;
@@ -73,6 +66,7 @@ label{
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .content1,
@@ -104,6 +98,10 @@ label {
   color: rgb(210, 18, 18);
   transition-duration: .6s;
   cursor: pointer;
+  display: inline-block;   
+  width: 30px;
+  height: 30px;
+  text-align: center;
 }
 
 label:hover {
@@ -117,4 +115,8 @@ label:hover {
 #i_5:checked ~ .controls label[for="i_5"]
 {
   color: #22f60b;
+}
+
+#i_6:hover ~ .controls label[for="i_6"] {
+  transform: rotate(180deg);
 }
