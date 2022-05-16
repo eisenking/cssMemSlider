@@ -18,7 +18,7 @@ input {
   opacity: 0;
   width: 0;
   height: 0;
-  position: absolute;
+  visibility: none;
 }
 
 .slider {
@@ -33,7 +33,7 @@ input {
 }
 
 .slide__text {
-  text-align: center;
+  text-align: left;
   line-height: 2rem;
   font-size: 1.5rem;
 }
@@ -42,7 +42,7 @@ input {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
-  box-shadow: 3px 3px 20px #606060;
+  box-shadow: 3px 3px 10px #4d4d4d;
 }
 
 .image2,
@@ -99,8 +99,8 @@ label {
   transition-duration: .6s;
   cursor: pointer;
   display: inline-block;   
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   text-align: center;
 }
 
