@@ -21,6 +21,12 @@ input {
   position: absolute;
 }
 
+label{
+  display: inline-block;   
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
 
 .slider {
   width: 50%; 
