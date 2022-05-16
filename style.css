@@ -101,9 +101,13 @@ label{
 }
 
 label {
-  color: #e41212;
+  color: rgb(210, 18, 18);
   transition-duration: .6s;
   cursor: pointer;
+}
+
+label:hover {
+  color:rgb(255, 238, 0);
 }
 
 #i_1:checked ~ .controls label[for="i_1"],
@@ -112,5 +116,5 @@ label {
 #i_4:checked ~ .controls label[for="i_4"],
 #i_5:checked ~ .controls label[for="i_5"]
 {
-  color: #424242;
+  color: #22f60b;
 }
